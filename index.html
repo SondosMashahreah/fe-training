@@ -6,26 +6,48 @@
     <title>My Bio</title>
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#About">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>Welcome to My Bio</h1>
     </header>
+    <figure>
+    <img src="images/bio.jpg" alt="biography Picture" width="500" height="150">
+        <figcaption>Every story has a <em>beginning</em></figcaption>
+    </figure>
 
-    <main>
+    <main class="About">
         <h2>Hello! My name is Sondos Mashahreh.</h2>
-        <p>I am a Computer Engineering student in my final year at Al-Quds University – Abu Dis.<br>
+        <p>I am a <strong>Computer Engineering</strong> student in my final year at <strong>Al-Quds University – Abu Dis.</strong><br>
          I am highly passionate about technology, which inspired me to pursue this field.<br>
         I am continuously working on developing my skills in programming and front-end development,<br>
-        with the goal of becoming a skilled front-end developer. <br>
+        with the goal of becoming a skilled<strong> front-end developer.</strong>  <br>
         I also aspire to contribute to building innovative projects that<br>
         provide effective solutions and create a positive impact on society.</p>
     </main>
     
-    <section>
+    <section id="skills">
         <h2>My Skills:</h2>
         <h3>Technical Skills:</h3>
         <ul>
-            <li>Programming Languages: C, Python</li>
-            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Programming Languages:
+            <ol>
+                <li>C</li>
+                <li>Python</li>
+            </ol>
+            </li>
+            <li>Web Development:
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+            </li>
             <li>Version Control: Git</li>
         </ul>
         <h3>Soft Skills:</h3>
@@ -37,12 +59,33 @@
         </ul>
     </section>
 
-    <footer>
+
+    
+<hr>
+    <form id="contact">
+
         <h2>Contact Me:</h2>
+    
         <p>Phone: +972 52 383 4876</p>
         <p>Email:<a href="mailto:SondosMashahreh@gmail.com">SondosMashahreh@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/sondos-mashahreh-b41b27382?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">Sondos Mashahreh</a></p>
-    </footer>
+        <h3>Send me a message: </h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="4" cols="40" placeholder="Type your message here..."></textarea>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+
+        <footer>
+            <p>&copy; 2026 My Bio. All rights reserved.</p>
+            <p>bio Sondos Mashahreh</p>
+        </footer>
 
 
 
