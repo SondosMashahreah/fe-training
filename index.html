@@ -4,6 +4,8 @@
     <meta  charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal bio of Sondos Mashahreh, Computer Engineering student.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>My Bio</title>
 </head>
 <body>
@@ -40,8 +42,10 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qyHyFsT7Hig?si=649HlX-gsU0fcvH4" title="YouTube video player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
     
+            <h2>My Skills:</h2>
+
     <section id="skills">
-        <h2>My Skills:</h2>
+            <div class="box">
         <h3>Technical Skills:</h3>
         <ul>
             <li>Programming Languages:
@@ -58,7 +62,10 @@
             </ol>
             </li>
             <li>Version Control: Git</li>
+            </div>
         </ul>
+            <div class="box">
+
         <h3>Soft Skills:</h3>
         <ul>
             <li>Communication</li>
@@ -66,16 +73,21 @@
             <li>Problem Solving</li>
             <li>Leadership</li>
         </ul>
-    </section>
+        </div>
 
         <aside>
+                <div class="box">
+
             <h3>My Hobbies:</h3>
             <ul>
                 <li>Reading</li>
                 <li>Photography</li>
 
             </ul>
+            </div>
         </aside>    
+            </section>
+
 
     <section id="education">
     <table border="1">
@@ -99,13 +111,15 @@
 
     </main>
     
-    <form id="contact">
+    <section id="contact">
 
         <h2>Contact Me:</h2>
     
         <p>Phone: +972 52 383 4876</p>
         <p>Email:<a href="mailto:SondosMashahreh@gmail.com">SondosMashahreh@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/sondos-mashahreh-b41b27382?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">Sondos Mashahreh</a></p>
+    </section>
+    <form id="contactForm">
         <h3>Send me a message: </h3>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -116,15 +130,12 @@
         <label for="message">Message:</label>
         <textarea name="message" id="message" rows="4" cols="40" placeholder="Type your message here..." required></textarea>
         <br>
-        <button type="submit">Send</button>
+        <button class="but" type="submit">Send</button>
+<div id="savedMessages" style="display:none;"></div>    <hr>
     </form>
-<hr>
         <footer>
-            <p>&copy; 2026 My Bio. All rights reserved.</p>
+    <p id="datetime"></p>
             <p>Bio Sondos Mashahreh</p>
         </footer>
-
-
-
 </body>
 </html>

@@ -1,0 +1,144 @@
+body{
+background-color: rgb(255, 228, 228);
+margin-top: 0;
+text-align: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit
+}
+
+.navbar ul{
+    background-color: rgb(193, 72, 92);
+    color: rgb(254, 253, 253);
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+h1{
+    margin-top: 50px;
+    color: rgb(221, 88, 110);
+}
+
+h2{
+    color: rgb(130, 58, 70);
+}
+
+h3{
+    color: rgb(221, 88, 110);
+}
+
+.but{
+    background-color: rgb(221, 88, 110);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+html {
+    scroll-padding-top: 50px;
+}
+
+#about {
+    background-color: rgb(241, 239, 239);
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 20px 10px 20px rgba(123, 4, 90, 0.1);
+}
+
+#skills {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    text-align: left;
+    width: 90%;
+    margin: 30px auto;
+}
+
+#skills .box {
+    flex: 1;
+    width: 100%;
+    background-color: rgb(241, 239, 239);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(130, 58, 70, 0.15);
+    text-align: left;
+    border-top: 2.5px solid rgb(221, 88, 110);
+    transition: transform 0.2s ease;
+}
+
+#skills .box:hover {
+    transform: translateY(5px);
+}
+
+#skills h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#skills > aside {
+    flex: 1;
+    display: flex;
+}
+
+#education {
+    width: 90%;
+    margin: 50px auto;
+}
+
+#education table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(241, 239, 239);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#education caption {
+    padding: 15px;
+    font-size: 25px;
+    color: rgb(130, 58, 70);
+}
+
+#education th {
+    background-color: rgb(193, 72, 92);
+    color: white;
+    padding: 15px;
+}
+
+#education td {
+    padding: 15px;
+    color: rgb(80, 50, 55);
+}
+
+#contact, #contactForm {
+    text-align: left;
+    background-color: rgb(241, 239, 239);
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 20px 10px 20px rgba(123, 4, 90, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
