@@ -1,7 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
 background-color: rgb(255, 228, 228);
-margin-top: 0;
+margin: 0;
 text-align: center;
+box-sizing: border-box;
+
 }
 
 .navbar a{
@@ -19,6 +25,7 @@ text-align: center;
     margin: 0;
     font-size: 20px;
     gap: 20px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .navbar{
@@ -140,5 +147,92 @@ html {
     box-shadow: 20px 10px 20px rgba(123, 4, 90, 0.1);
     display: flex;
     flex-direction: column;
+}
+
+#contactForm {
+    background-color: #ffffff; 
+    border: 2px solid rgb(221, 88, 110);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(130, 58, 70, 0.1); 
+    padding: 25px 30px;
+}
+
+#contactForm label {
+    font-weight: bold;
+    color: rgb(130, 58, 70);
+    font-size: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #fb8686; 
+    border-radius: 4px; 
+    font-size: 15px;
+    background-color: #fefcfc;
+    box-sizing: border-box;
+}
+
+#contactForm .but {
+    background-color: rgb(221, 88, 110);
+    font-size: 16px;
+}
+
+#contactForm .but:hover {
+    background-color: rgb(193, 72, 92); 
+}
+
+#product-showcase {
+display: flex;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 204, 204);
+    padding: 15px;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+img {
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #skills, #education, #contact, #contactForm, #product-showcase, .product, img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #education {
+        width: 90%;
+    }
+
+    #contact, #contactForm {
+        width: 90%;
+    }
+    
+}
+
+.product h3 {
+background-color: rgb(248, 248, 248);
+padding: 10px;
+border-radius: 10px;
+}
+
+#product-showcase-link, #my-bio-link{
+    background-color: rgb(123, 85, 92);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 

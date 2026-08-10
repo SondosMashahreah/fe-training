@@ -54,26 +54,4 @@ function displayContactData() {
             <hr>
         `;
     });
-
-    document.getElementById("savedMessages").innerHTML = output;
-}
-
-
-document.getElementById("reviewBtn").addEventListener("click", function() {
-
-    const box = document.getElementById("savedMessages");
-
-    if (box.style.display === "none") {
-
-        displayContactData();
-        box.style.display = "block";
-        this.textContent = "Hide Messages";
-
-    } else {
-
-        box.style.display = "none";
-        this.textContent = "Review Messages";
-
-    }
-
-});
+};
