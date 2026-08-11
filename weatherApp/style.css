@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    text-align: center;
+
+    background-image: url("images/weather.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#weatherResult {
+    background: rgb(192, 217, 231);
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#weatherResult h2 {
+    margin-bottom: 10px;
+}
+
+#forecast {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.weatherCard {
+    background: rgb(221, 243, 255);
+    padding: 15px;
+    width: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.weatherCard h3 {
+    margin: -15px -15px 10px -15px;
+    padding: 8px;
+    color: rgb(2, 71, 111);
+    background-color: white;
+}
+
+.weatherCard p {
+    margin: 5px 0;
+}
+
+#btn{
+    background-color:rgb(5, 118, 183) ;
+    color: white;
+    font-weight: bold;
+}

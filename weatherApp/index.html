@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta  charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather App">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <h3>Weather Now</h3>
+    <h1>Know the Weather, plan your day better!</h1>
+    <form id="weatherForm">
+        <label id="cityLabel" for="city"></label>
+        <input  type="text" id="city" name="city" required placeholder="Search for a city..">
+        <button id="btn" type="submit">Get Weather</button>
+    </form>
+    <div id="weatherResult">
+                <h2 id="cityName">Jerusalem</h2>
+                <p>Temperature:<span id="temperature">--</span></p>
+                <p>Feels like:<span id="feelsLike">--</span></p>
+                <p>Humidity:<span id="humidity">--</span></p>
+                <p>Wind:<span id="wind">--</span></p>
+    </div>
+
+    <div id="forecast">
+
+        <div class="weatherCard">
+            <h3 id="day1">---</h3>
+            <p id="temp1">--°C</p>
+            <p id="desc1">---</p>
+        </div>
+
+        <div class="weatherCard">
+            <h3 id="day2">---</h3>
+            <p id="temp2">--°C</p>
+            <p id="desc2">---</p>
+        </div>
+
+        <div class="weatherCard">
+            <h3 id="day3">---</h3>
+            <p id="temp3">--°C</p>
+            <p id="desc3">---</p>
+        </div>
+
+        <div class="weatherCard">
+            <h3 id="day4">---</h3>
+            <p id="temp4">--°C</p>
+            <p id="desc4">---</p>
+        </div>
+
+        <div class="weatherCard">
+            <h3 id="day5">---</h3>
+            <p id="temp5">--°C</p>
+            <p id="desc5">---</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

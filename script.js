@@ -55,3 +55,19 @@ function displayContactData() {
         `;
     });
 };
+
+const videoToggle = document.getElementById("videoToggle");
+const videoFrame = document.getElementById("videoFrame");
+
+videoToggle.addEventListener("click", function () {
+    videoFrame.classList.toggle("show");
+
+    if (videoFrame.classList.contains("show")) {
+        videoToggle.textContent = "Hide Video";
+    } else {
+        videoToggle.textContent = "Show Video";
+    }
+});
+
+
+
